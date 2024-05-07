@@ -24,8 +24,12 @@
   }
 
   &__bottom {
-    padding: 88px;
+    padding-bottom: 88px;
     @include contentPaddingInline;
+
+    @include onTablet() {
+      padding-bottom: 130px;
+    }
   }
 }
 

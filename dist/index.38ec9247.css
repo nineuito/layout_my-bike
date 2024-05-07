@@ -150,13 +150,14 @@
 }
 
 .header__bottom {
-  padding: 88px;
+  padding-bottom: 88px;
   padding-inline: 20px;
 }
 
 @media (width >= 576px) {
   .header__bottom {
     padding-inline: 72px;
+    padding-bottom: 130px;
   }
 }
 
