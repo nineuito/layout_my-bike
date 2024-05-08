@@ -3,6 +3,9 @@
   font-size: 16px;
   line-height: 22.4px;
   color: #FFFFFF;
+  &, a {
+    cursor: url('../images/icons/cursor-mouse-mice-white-black.svg'), auto;
+  }
 
   scroll-behavior: smooth;
 
@@ -14,6 +17,9 @@
   }
   
   &__menu {
+    &, a {
+      cursor: url('../images/icons/cursor-mouse-mice-black.svg'), auto;
+    }
     position: fixed;
     top: 0;
     left: 0;
