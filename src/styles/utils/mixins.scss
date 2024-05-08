@@ -1,3 +1,17 @@
+@mixin content-position-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hover ($property, $toValue) {
+  transition: #{$property} 0.3s;
+
+  &:hover {
+    #{$property}: $toValue;
+  }
+}
+
 @mixin onTablet {
   @media (min-width: $tablet-min-width) {
     @content;

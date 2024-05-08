@@ -11,11 +11,23 @@
   }
 
   &__icons {
-      display: flex;
-      gap: 24px;
-    }
-  
-  &__logo {
     display: flex;
+    gap: 24px;
+  }
+
+  &__logo-link {
+    @include content-position-center;
+  }
+
+  &__logo {
+    width: 130px;
+    height: 38px;
+    
+    @include onTablet {
+      width: 187px;
+      height: 56px;
+    }
+
+    @include hover(transform,scale(1.2));
   }
 }
